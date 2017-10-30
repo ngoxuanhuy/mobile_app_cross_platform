@@ -10,17 +10,22 @@ import {
   Dimensions,
   Alert
 } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, DrawerNavigator } from 'react-navigation';
+import Menu from './menu';
+import Profile from './profile'
 
-export default class App extends Component {
-    static navigationOptions = {
-        header: null
-    }
-    render() {
-      return (
-        <View>
-          <Text>Chat with Lucy</Text>
-        </View>
-      );
-    }
+const Route = DrawerNavigator({
+  Menu: { screen: Menu}
+}, {
+  contentComponent: props => <Profile {...props} />,
+  contentOptions: {},
+})
+
+export default class Main extends Component {
+  static navigationOptions = {
+    header: null
+  };
+  render() {
+    return <Route />
+  }
 }

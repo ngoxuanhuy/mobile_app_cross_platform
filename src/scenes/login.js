@@ -102,11 +102,11 @@ const styles = StyleSheet.create({
   },
   redHeader: {
     backgroundColor: '#E11818',
-    flex: 0.2
+    height: 30,
   },
   yellowHeader: {
     marginTop: 2,
-    flex: 0.05,
+    height: 15,
     backgroundColor: '#FFD600',
     marginBottom: 20
   },
