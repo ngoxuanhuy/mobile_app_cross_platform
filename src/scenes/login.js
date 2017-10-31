@@ -11,7 +11,7 @@ import {
   Alert
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-
+import LoginFacebookAccount from '../components/loginFacebookAccount';
 import App from './main';
 
 class LoginApp extends Component {
@@ -76,6 +76,7 @@ class LoginApp extends Component {
           <TouchableOpacity style={styles.buttonContainer} underlayColor="blue" onPress={this.loggingIn}>
               <Text style={styles.buttonText}> LOGIN </Text>
           </TouchableOpacity>
+          <LoginFacebookAccount />
         </View>
       </View>
     )
