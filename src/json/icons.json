@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Classmate's list",   
+      "img": "require('../imgs/classmate.png')",
+      "screen": "classmateScreen"
+    },
+    {
+      "title": "Register courses",   
+      "img": "require('../imgs/register.png')",
+      "screen": "registerScreen"
+    },
+    {
+      "title": "External links",
+      "img": "require('../imgs/external.png')",
+      "screen": "externalScreen"
+    },
+    {
+      "title": "Support",
+      "img": "require('../imgs/support.png')",
+      "screen": "supportScreen"
+    },
+    {
+      "title": "Feedback",
+      "img": "require('../imgs/feedback.png')",
+      "screen": "feedbackScreen"
+    },
+    {
+      "title": "Academic transcript",
+      "img": "require('../imgs/transcript.png')",
+      "screen": "transcriptScreen"
+    }
+]

@@ -20,6 +20,8 @@ import Register from './menuScenes/register';
 import Support from './menuScenes/support';
 import Transcript from './menuScenes/transcript';
 
+var w = Dimensions.get('window').width;
+
 class menuManagement extends Component {
     static navigationOptions = {
         header: null
@@ -28,17 +30,17 @@ class menuManagement extends Component {
     state = {
       icons: [
         {
-          title: "Classmate's list",   
+          title: "Classmates",   
           img: require('../imgs/classmate.png'),
           screen: 'classmateScreen'
         },
         {
-          title: 'Register courses',   
+          title: 'Register',   
           img: require('../imgs/register.png'),
           screen: 'registerScreen'
         },
         {
-          title: 'External links',
+          title: 'Websites',
           img: require('../imgs/external.png'),
           screen: 'externalScreen',
         },
@@ -53,7 +55,7 @@ class menuManagement extends Component {
           screen: 'feedbackScreen',
         },
         {
-          title: 'Academic transcript',
+          title: 'Transcript',
           img: require('../imgs/transcript.png'),
           screen: 'transcriptScreen'
         }
@@ -122,7 +124,7 @@ const RootMenu = StackNavigator({
   externalScreen: { screen: External },
   supportScreen: { screen: Support },
   feedbackScreen: { screen: Feedback},
-  transcripScreen: { screen: Transcript},
+  transcriptScreen: { screen: Transcript},
 })
 
 export default class Menu extends Component {
@@ -165,16 +167,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#E11818',
     borderColor: '#FFD600',
-    borderRadius: (Dimensions.get('window').width / 3),
+    borderRadius: (w / 3),
     borderWidth: 5,
     justifyContent: 'center',
-    height: (Dimensions.get('window').width / 3),
-    width: (Dimensions.get('window').width / 3),
+    height: (w / 3),
+    width: (w / 3),
   },
   icon: {
     tintColor: '#fff',
-    height: (Dimensions.get('window').width / 4),
-    width: (Dimensions.get('window').width / 4),
+    height: (w / 4),
+    width: (w / 4),
   },
   iconTitle: {
     textAlign: 'center'
@@ -182,8 +184,8 @@ const styles = StyleSheet.create({
   imageWrap: {
     justifyContent: 'space-around',
     alignItems: 'center',
-    width: (Dimensions.get('window').width / 2) - 10,
-    height: (Dimensions.get('window').width / 2) - 10
+    width: (w / 2) - 10,
+    height: (w / 2) - 10
   },
   iconGrid: {
     flex: 1,
@@ -191,4 +193,3 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap'
   },
 });
-

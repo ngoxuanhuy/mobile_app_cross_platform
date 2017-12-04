@@ -1,0 +1,22 @@
+[
+    {
+        "vn_title": "Đào tạo đại học",
+        "en_title": "University Training"  ,
+        "url": "https://ctt-daotao.hust.edu.vn/"
+    },
+    {
+        "vn_title": "Công tác sinh viên",
+        "en_title": "Student Portal",
+        "url": "http://ctsv.hust.edu.vn/"
+    },
+    {
+        "vn_title": "Viện CNTT và Truyền thông",
+        "en_title": "School of Information and Communication Technology",
+        "url": "https://soict.hust.edu.vn/"
+    },
+    {
+        "vn_title": "Hợp tác quốc tế",
+        "en_title": "International Coorperation",
+        "url": "http://htqt.hust.edu.vn/"
+    }
+]
